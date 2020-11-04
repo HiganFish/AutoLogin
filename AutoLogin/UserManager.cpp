@@ -84,11 +84,11 @@ bool UserManager::OperateChangeUserInfo(UserInfo* userinfo)
     std::cout << "输入密码: \r\n";
     std::cin >> userinfo->password;
 
-    std::cout << "输入运营商: 0-联通 1-电信 3-移动\r\n";
+    std::cout << "输入运营商: 0-联通 1-电信 2-移动\r\n";
     int yys_sub;
     std::cin >> yys_sub;
 
-    if (userinfo->username.empty() || userinfo->password.empty() || yys_sub < 0 || yys_sub > 3)
+    if (userinfo->username.empty() || userinfo->password.empty() || yys_sub < 0 || yys_sub > 2)
     {
         return false;
     }

@@ -74,7 +74,7 @@ bool Process(Operate operate)
             result = Utils::EnableBoot(g_file_name);
             if (result)
             {
-                std::cout << "设置开机启动成功!!!\r\n";
+                std::cout << "设置开机启动成功\r\n";
             }
             else
             {

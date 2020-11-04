@@ -33,7 +33,7 @@ bool NetworkManager::Login(const std::string& username, const std::string& passw
         error_msg = "用户超限";
         return false;
     }
-    else if (login_result == R"(({"result":"0","msg":"dXNlcmlkIGVycm9yMQ==","ret_code":"1"}))")
+    else if (login_result == R"(({"result":"0","msg":"dXNlcmlkIGVycm9yMg==","ret_code":"1"}))")
     {
         error_msg = "请检查账号密码或者运营商";
     }
